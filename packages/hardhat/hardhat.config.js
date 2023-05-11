@@ -6,7 +6,7 @@ require("@nomiclabs/hardhat-ethers");
 require("@typechain/hardhat");
 require("hardhat-celo");
 
-const defaultNetwork = "alfajores";
+const defaultNetwork = "celo";
 const mnemonicPath = "m/44'/52752'/0'/0"; // derivation path used by Celo
 
 // This is the mnemonic used by celo-devchain
@@ -34,7 +34,8 @@ module.exports = {
             chainId: 44787,
         },
         celo: {
-            url: "https://forno.celo.org",
+            // url: "https://forno.celo.org",
+            url: "https://withered-white-mound.celo-mainnet.discover.quiknode.pro/cbdff7c520a8112bb3cecb97398d3061923479d3/",
             accounts: [process.env.PRIVATE_KEY],
             chainId: 42220,
         },

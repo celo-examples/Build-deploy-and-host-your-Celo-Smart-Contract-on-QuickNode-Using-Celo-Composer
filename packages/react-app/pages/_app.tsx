@@ -12,6 +12,7 @@ import {
 } from "@rainbow-me/rainbowkit/wallets";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+import { publicProvider } from 'wagmi/providers/public'
 
 // Import known recommended wallets
 import { Valora, CeloWallet, CeloDance } from "@celo/rainbowkit-celo/wallets";
@@ -23,7 +24,12 @@ import Layout from "../components/Layout";
 
 const { chains, provider } = configureChains(
   [Alfajores, Celo],
-  [jsonRpcProvider({ rpc: (chain) => ({ http: chain.rpcUrls.default.http[0] }) })]  
+  [jsonRpcProvider({   rpc: () => ({
+        http: `https://withered-white-mound.celo-mainnet.discover.quiknode.pro/cbdff7c520a8112bb3cecb97398d3061923479d3/`,
+      }),
+      priority: 0
+    }),
+    publicProvider({ priority: 1 }),]  
 );
 
 const connectors = connectorsForWallets([
