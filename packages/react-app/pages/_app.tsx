@@ -25,7 +25,7 @@ import Layout from "../components/Layout";
 const { chains, provider } = configureChains(
   [Alfajores, Celo],
   [jsonRpcProvider({   rpc: () => ({
-        http: `https://withered-white-mound.celo-mainnet.discover.quiknode.pro/cbdff7c520a8112bb3cecb97398d3061923479d3/`,
+        http: `https://withered-white-mound.celo-mainnet.discover.quiknode.pro/${process.env.NEXT_PUBLIC_QUICKNODE_API_KEY}/`,
       }),
       priority: 0
     }),
