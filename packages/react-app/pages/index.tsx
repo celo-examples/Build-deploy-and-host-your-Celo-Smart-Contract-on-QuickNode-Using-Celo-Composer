@@ -34,8 +34,7 @@ export default function Home() {
     address: contractAddress,
     abi: contractAbi.abi,
     functionName: 'retrieve',
-    chainId: 44787,
-    args: []
+    chainId: 42220,
   })
   
   const updateNumber = async () => {

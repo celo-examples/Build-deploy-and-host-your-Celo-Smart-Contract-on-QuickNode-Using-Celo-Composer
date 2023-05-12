@@ -34,8 +34,7 @@ module.exports = {
             chainId: 44787,
         },
         celo: {
-            // url: "https://forno.celo.org",
-            url: "https://withered-white-mound.celo-mainnet.discover.quiknode.pro/cbdff7c520a8112bb3cecb97398d3061923479d3/",
+            url: `https://withered-white-mound.celo-mainnet.discover.quiknode.pro/${QUICKNODE_API_KEY}/`,
             accounts: [process.env.PRIVATE_KEY],
             chainId: 42220,
         },
