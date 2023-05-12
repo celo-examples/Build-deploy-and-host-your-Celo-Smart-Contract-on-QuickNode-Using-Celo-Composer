@@ -1,5 +1,5 @@
 ## About the Project
-This is a simple dapp that shows how to use Celo composer and QuickNode RPC API.
+This is a simple dapp for storing and retrieving a number. This dapp shows how to use Celo composer and QuickNode RPC API.
 
 ## How to Setup the project
 - Fork/clone the repo
