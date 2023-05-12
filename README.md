@@ -7,4 +7,4 @@ This is a simple dapp for storing and retrieving a number. This dapp shows how t
 - To start the development server, navigate to react-app directory and type `npm run dev` to start the local server
 
 ## License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/gconnect/sage-QuickNode-Setup/blob/main/LICENSE) for more information.
